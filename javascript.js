@@ -1,4 +1,7 @@
 function getComputerChoice (){
+  const names = ['Rock', 'Paper', 'Scissors'];
+  const random = names[Math.floor(Math.random()*names.length)];
+  console.log(random);
 
 }
 
