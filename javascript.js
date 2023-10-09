@@ -5,7 +5,7 @@ function getComputerChoice (){
 }
 
 function playRound(playerSelection, computerSelection) {
-    // your code here!
+    let bla = prompt('Rock, Paper or Scissors?');
   }
    
   const playerSelection = "rock";
