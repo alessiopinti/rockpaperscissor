@@ -5,21 +5,22 @@ function getComputerChoice (){
 }
 
 function playRound(playerSelection, computerSelection) {
-  if (playerSelection === 'Rock' && computerSelection === 'Rock') {
-    console.log('Its a tie.');
+  if (playerSelection === 'Rock'){
+    if (computerSelection == 'Rock') {
+      console.log('Its a tie');
+    }
+    else if (computerSelection == 'Paper'){
+      console.log('You lose');
+    }
+    else if (computerSelection == 'Scissors'){
+      console.log('You win');
+    }
   }
-  else if (playerSelection === 'Rock' && computerSelection === 'Paper'){
-    console.log('You win');
-  }
-  else if (playerSelection === 'Rock' && computerSelection === 'Scissors'){
-    console.log('You lose');
-  }
-
-
   }
 
   const playerSelection = prompt('Rock, Paper or Scissors?');
   const computerSelection = getComputerChoice();
+  playRound(playerSelection, computerSelection);
   
   
 
