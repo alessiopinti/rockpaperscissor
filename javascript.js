@@ -40,10 +40,12 @@ function playRound(playerSelection, computerSelection) {
       return('Its a tie');
     }
   }
-  }
+}
 
-  
-  
+function game() {
+
+}
+
 
   const playerSelection = prompt('rock, paper or scissors?').toLowerCase();
   const computerSelection = getComputerChoice();
@@ -53,6 +55,13 @@ function playRound(playerSelection, computerSelection) {
   console.log(playRound(playerSelection, computerSelection));
 
   playRound(playerSelection, computerSelection);
+
+
+
+
+
+
+
   
   
 
