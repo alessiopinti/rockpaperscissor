@@ -54,14 +54,21 @@ function playRound() {
   }
 }
 
-
-
 function game() {
+  let playerScore = 0;
+  let computerScore = 0;
   
-  playRound();
+ let firstPlayRound = playRound();
+ let secondPlayRound = playRound();
+ let thirdlayRound = playRound();
+ let fourthPlayRound = playRound();
+ let fifthPlayRound = playRound();
+
 }
 
 game();
+
+
 
 
 
