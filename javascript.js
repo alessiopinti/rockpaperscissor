@@ -10,46 +10,46 @@ function playRound() {
   const computerSelection = getComputerChoice();
   if (playerSelection === 'rock'){
     if (computerSelection === 'rock') {
-      console.log('Its a tie');
-      return 'Its a tie';
+      console.log('You chose Rock. The computer chose Rock. Its a tie');
+      return 'You chose Rock. The computer chose Rock. Its a tie';
     }
     else if (computerSelection === 'paper'){
-      console.log('You lose! Paper beats Rock');
-      return 'You lose';
+      console.log('You chose Rock. The computer chose Paper. You lose');
+      return 'You chose Rock. The computer chose Paper. You lose';
     }
     else if (computerSelection === 'scissors'){
-      console.log('You win! Rock beats Scissors');
-      return 'You win';
+      console.log('You chose Rock. The computer chose Scissors. You Win');
+      return 'You chose Rock. The computer chose Scissors. You Win';
     }
   }
 
   if (playerSelection === 'paper'){
     if (computerSelection === 'rock') {
-      console.log('You win! Paper beats Rock');
-      return'You win';
+      console.log('You chose Paper. The computer chose Rock. You Win.');
+      return 'You chose Paper. The computer chose Rock. You Win.';
     }
     else if (computerSelection === 'paper'){
-      console.log('Its a tie');
-      return 'Its a tie';
+      console.log('You chose Paper. The computer chose Paper. Its a tie.');
+      return 'You chose Paper. The computer chose Paper. Its a tie.';
     }
     else if (computerSelection === 'scissors'){
-      console.log('You lose! Scissors beat Paper');
-      return'You lose';
+      console.log('You chose Paper. The computer chose Scissors. You Lose.');
+      return 'You chose Paper. The computer chose Scissors. You Lose.';
     }
   }
 
   if (playerSelection === 'scissors'){
     if (computerSelection === 'rock') {
-      console.log('You lose. Rock beats Scissors');
-      return'You lose';
+      console.log('You chose Scissors. The computer chose Rock. You Lose.');
+      return 'You chose Scissors. The computer chose Rock. You Lose.';
     }
     else if (computerSelection === 'paper'){
-      console.log('You win');
-      return'You win. Scissors beat Rock';
+      console.log('You chose Scissors. The computer chose Paper. You Win.');
+      return 'You chose Scissors. The computer chose Paper. You Win.';
     }
     else if (computerSelection === 'scissors'){
-      console.log('Its a tie');
-      return'Its a tie';
+      console.log('You chose Scissors. The computer chose Scissors. Its a tie.');
+      return 'You chose Scissors. The computer chose Scissors. Its a tie.';
     }
   }
 }
@@ -57,6 +57,7 @@ function playRound() {
 
 
 function game() {
+  
   playRound();
 }
 
