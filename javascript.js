@@ -8,48 +8,60 @@ function playRound() {
   
   const playerSelection = prompt('rock, paper or scissors?').toLowerCase();
   const computerSelection = getComputerChoice();
+  const rockVersusRock = 'You chose Rock. The computer chose Rock. Its a tie';
+  const rockVersusPaper = 'You chose Rock. The computer chose Paper. You lose';
+  const rockVersusScissors = 'You chose Rock. The computer chose Scissors. You Win';
+
+  const paperVersusRock = 'You chose Paper. The computer chose Rock. You Win.';
+  const paperVersusPaper = 'You chose Paper. The computer chose Paper. Its a tie.';
+  const paperVersusScissors = 'You chose Paper. The computer chose Scissors. You Lose.';
+
+  const scissorsVersusRock = 'You chose Scissors. The computer chose Rock. You Lose.';
+  const scissorsVersusPaper = 'You chose Scissors. The computer chose Paper. You Win.';
+  const scissorsVersusScissors = 'You chose Scissors. The computer chose Scissors. Its a tie.';
+
   if (playerSelection === 'rock'){
     if (computerSelection === 'rock') {
-      console.log('You chose Rock. The computer chose Rock. Its a tie');
-      return 'You chose Rock. The computer chose Rock. Its a tie';
+      console.log(rockVersusRock);
+      return rockVersusRock;
     }
     else if (computerSelection === 'paper'){
-      console.log('You chose Rock. The computer chose Paper. You lose');
-      return 'You chose Rock. The computer chose Paper. You lose';
+      console.log(rockVersusPaper);
+      return rockVersusPaper;
     }
     else if (computerSelection === 'scissors'){
-      console.log('You chose Rock. The computer chose Scissors. You Win');
-      return 'You chose Rock. The computer chose Scissors. You Win';
+      console.log(rockVersusScissors);
+      return rockVersusScissors;
     }
   }
 
   if (playerSelection === 'paper'){
     if (computerSelection === 'rock') {
-      console.log('You chose Paper. The computer chose Rock. You Win.');
-      return 'You chose Paper. The computer chose Rock. You Win.';
+      console.log(paperVersusRock);
+      return paperVersusRock;
     }
     else if (computerSelection === 'paper'){
-      console.log('You chose Paper. The computer chose Paper. Its a tie.');
-      return 'You chose Paper. The computer chose Paper. Its a tie.';
+      console.log(paperVersusPaper);
+      return paperVersusPaper;
     }
     else if (computerSelection === 'scissors'){
-      console.log('You chose Paper. The computer chose Scissors. You Lose.');
-      return 'You chose Paper. The computer chose Scissors. You Lose.';
+      console.log(paperVersusScissors);
+      return paperVersusScissors;
     }
   }
 
   if (playerSelection === 'scissors'){
     if (computerSelection === 'rock') {
-      console.log('You chose Scissors. The computer chose Rock. You Lose.');
-      return 'You chose Scissors. The computer chose Rock. You Lose.';
+      console.log(scissorsVersusRock);
+      return scissorsVersusRock;
     }
     else if (computerSelection === 'paper'){
-      console.log('You chose Scissors. The computer chose Paper. You Win.');
-      return 'You chose Scissors. The computer chose Paper. You Win.';
+      console.log(scissorsVersusPaper);
+      return scissorsVersusPaper;
     }
     else if (computerSelection === 'scissors'){
-      console.log('You chose Scissors. The computer chose Scissors. Its a tie.');
-      return 'You chose Scissors. The computer chose Scissors. Its a tie.';
+      console.log(scissorsVersusScissors);
+      return scissorsVersusScissors;
     }
   }
 }
@@ -63,7 +75,6 @@ function game() {
  let thirdlayRound = playRound();
  let fourthPlayRound = playRound();
  let fifthPlayRound = playRound();
-
 }
 
 game();
